@@ -11,9 +11,10 @@
 <body>
     <div></div>
     <form action="" method="post">
-        <h1>Formulaire d'Inscription</h1>
+        <h1>Student Network</h1>
+        <h2>Formulaire d'Inscription</h2>
         <label id="login" for="login">Login:</label>
-        <input name="login" placeholder="Votre Login" type="text" required>
+        <input class="nun" name="login" placeholder="Votre Login" type="text" required>
         <br>
         <label id="nom" for="name">Nom:</label>
         <input name="name" placeholder="Votre Nom" type="text" required>
@@ -70,7 +71,9 @@
 
         try {
             if ($secure_requete->execute()) {
-                echo "Inscription réussie !";
+                header("Location: login.php"); 
+
+                exit();
             } else {
                 echo "Erreur lors de l'inscription.";
             }

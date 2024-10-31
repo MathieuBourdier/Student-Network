@@ -1,20 +1,21 @@
-
 .container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh; 
-    background-color: #2f4d49;     
-}
-
-body {
-    background-image: url(image0_0.jpg);
+    background-color: #2f4d49;
+    background-image: url('images/student.jpg');
     background-size: cover;
     background-position: center;
 }
 
-form {
+.centered {
+    text-align: center;
+    margin-bottom: 20px;
+}
 
+form {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -24,17 +25,15 @@ form {
     padding: 20px;
     border: 1px solid #3b5372;
     border-radius: 10px;
-    background: rgba(22, 20, 18, 0.792);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background: linear-gradient(to bottom right, blue, pink);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin: auto;
     font-family: 'Comic Sans MS', cursive, sans-serif;
-    color: rgb(27, 123, 27)
 }
 
-
 form input {
-    background-color: #333333 !important; 
-    color: #FFFFFF!important; 
+    background-color: #ffffff; 
+    color: #000000; 
     padding: 10px;
     margin: 10px 0;
     border: 1px solid #3b5372;
