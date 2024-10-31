@@ -8,6 +8,7 @@
 }
 
 body {
+    /*image arriere plan*/
     background-image: url(image0_0.jpg);
     background-size: cover;
     background-position: center;
